@@ -1,0 +1,82 @@
+
+
+    .cards-nav{
+        border: 2px solid #F1CDB3;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 52px;
+        height: 52px;
+
+        color: $color-dark-3xl;
+
+        &:hover{
+            background-color: $color-primary-light;
+        }
+    }
+
+
+    .cards-nav__inactive{
+        border: 2px solid $color-dark-s;
+        color: $color-dark-s;
+        &:hover{
+            background-color: transparent;
+            cursor:default;
+        }
+    }
+
+    .cards-nav__active{
+        background-color: $color-primary;
+        &:hover{
+            background-color: $color-primary;
+            cursor:default;
+        }
+    }
+
+
+
+    .pets__pets-arrow-left{
+        background: url('../assets/icons/arrow-left.svg') no-repeat center center;
+        height: 6px;
+        width: 14px;
+    }
+    .pets__pets-arrow-right{
+        background: url('../assets/icons/arrow-right.svg') no-repeat center center;
+        height: 6px;
+        width: 14px;
+    }
+
+
+/*  <a href="#" class="">
+        <span class="cards-nav-ico pets__pets-arrow-left"></span>
+    </a>
+*/
+
+
+.burger{
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+
+    height: 22px;
+    width: 30px;
+
+    .burger__line{
+        background: $color-primary;
+        height: 2px;
+        width: 100%;
+    }
+
+    &:hover{
+        transform: rotate(90deg);
+        transition: transform 2s;
+    }
+
+    @include media-mobile{
+        display: flex;
+    }
+
+}

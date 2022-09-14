@@ -1,0 +1,182 @@
+
+
+@font-face {
+    src: local(Arial Regular),
+        url('./../assets/fonts/arial/ArialMT.woff2') format('woff2'),
+        url('./../assets/fonts/arial/ArialMT.woff') format('woff'),
+        url('./../assets/fonts/arial/arial-regular.ttf') format("truetype");
+    font-family: Arial Regular;
+    font-weight: 400;
+}
+
+@font-face {
+    src: local(Arial Italic),
+        url('./../assets/fonts/arial/Arial-ItalicMT.woff2') format('woff2'),
+        url('./../assets/fonts/arial/Arial-ItalicMT.woff') format('woff'),
+        url('./../assets/fonts/arial/fonts/arial/arial-italic.ttf') format("truetype");
+    font-family: Arial Italic;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+@font-face {
+    src: local(Georgia Bold),
+        url('./../assets/fonts/georgia/Georgia-Bold.woff2') format('woff2'),
+        url('./../assets/fonts/georgia/Georgia-Bold.woff') format('woff'),
+        url('./../assets/fonts/georgia/georgia-bold.ttf') format("truetype");
+    font-family: Georgia Bold;
+    font-weight: 700;
+}
+
+
+@font-face {
+    src:
+        //local(Georgia Regular),
+        url('./../assets/fonts/georgia/Georgia.woff2') format('woff2'),
+        url('./../assets/fonts/georgia/Georgia.woff') format('woff'),
+        url('./../assets/fonts/georgia/georgia-regular.ttf') format("truetype");
+    font-family: Georgia Regular;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+
+/*
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    @mixin font($size, $line-height, $letter-spacing, $weight){
+*/
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+
+.wrapper{
+    max-width: $desktop-width;
+    margin: 0 auto;
+
+    @include media-tablet{
+        max-width: $tablet-width;
+    }
+
+}
+
+
+
+
+
+
+h2{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(4.4rem, 130%);
+}
+
+h3{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(3.5rem, 130%, 0.06em);
+    color: $color-dark-l;
+}
+
+.h3-mobile{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(2.5rem, 130%, 0.06em);
+}
+
+h4{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(2rem, 115%, 0.06em);
+}
+
+h5{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(1.5rem, 110%, 0.06em);
+}
+
+.h5-modal-window{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(1.5rem, 110%, 0.06em);
+}
+
+.h5-modal-window{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(1.5rem, 110%, 0.06em);
+}
+
+.paragraph-l{
+    font-family: Arial Regular, Helvetica, sans-serif;
+    @include font(1.5rem, 160%);
+}
+
+.paragraph-s{
+    font-family: Arial Italic, Helvetica, sans-serif;
+    @include font(1.2rem, 150%);
+}
+
+.paragraph-mobile-menu{
+    font-family: Arial Regular, Helvetica, sans-serif;
+    @include font(3.2rem, 160%);
+}
+
+.logo-title{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(3.2rem, 110%, 0.06em);
+}
+
+.logo-subtitle{
+    font-family: Georgia Regular, 'Times New Roman', Times, serif;
+    @include font(1.3rem, auto, 0.1em);
+}
+
+
+.legal-notes{
+    font-family: Arial Italic, Helvetica, sans-serif;
+    @include font(1.2rem, 150%);
+
+    color: $color-dark-m;
+}
+
+
+
+/*
+
+.funky {
+    font: 20px/24px
+    fantasy {weight: bold;}
+
+    content: "Foo " + Bar;
+
+}
+
+*/

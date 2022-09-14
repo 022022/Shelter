@@ -1,0 +1,74 @@
+
+
+.pets{
+    .wrapper{
+        padding: $wrapper-padding-top $wrapper-padding-sides $wrapper-padding-bottom;
+        background-color: $color-light-l;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+
+
+    .pets__heading{
+        grid-area: pets__heading;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+
+    .slider{
+        width: 1200px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+
+        @include media-tablet{
+            width: 708px;
+        }
+
+        @include media-mobile{
+            width: 270px;
+        }
+    }
+
+    .slider__content{
+        width: 990px;
+        display: flex;
+        justify-content: space-between;
+        @include media-tablet{
+            width: 580px;
+            overflow: hidden;
+        }
+    }
+
+
+
+
+
+
+    .card3 {
+        @include media-tablet{
+            display: none;
+        }
+
+        @include media-mobile{
+            display: none;
+        }
+    }
+
+    .card2 {
+        @include media-mobile{
+            display: none;
+        }
+    }
+
+
+
+}
